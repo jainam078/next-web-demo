@@ -1,0 +1,21 @@
+@import '../../../../styles/mixins/index.scss';
+
+.sidebarProfile {
+    padding: 0 12px 16px 12px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    justify-content: space-between;
+    .leftcontent {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+
+        span {
+            display: block;
+            @include typo14-medium;
+            color: var(--theme-gray-800);
+        }
+    }
+
+}

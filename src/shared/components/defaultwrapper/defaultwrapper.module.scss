@@ -1,0 +1,15 @@
+@import '../../../styles/mixins/index.scss';
+
+.defaultwrapper {
+    display: flex;
+    background-color: var(--theme-page-background-color);
+}
+
+.sidebarlayout {
+    width: 243px;
+}
+
+.childrenlayout {
+    min-height: calc(100vh - 57px);
+    width: calc(100% - 243px);
+}

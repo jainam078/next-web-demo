@@ -1,0 +1,97 @@
+@import "../../../styles/mixins/index.scss";
+
+
+.aside {
+    border-right: 1px solid var(--theme-sidebar-border-color);
+    background-color: var(--theme-sidebar-background-color);
+    height: calc(100vh - 57px);
+    overflow: auto;
+
+    .sidebarTop {
+        padding: 16px 0 12px 0;
+        border-bottom: 1px solid var(--theme-sidbar-border-color);
+    }
+
+    .sidebarCenter {
+        padding: 12px 0;
+        border-bottom: 1px solid var(--theme-sidbar-border-color);
+    }
+
+    .allSidebarMenu {
+        .sidebarmenu:last-child {
+            margin: 0;
+        }
+
+        .sidebarmenu {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            cursor: pointer;
+            margin: 0 0 4px 0;
+            padding: 6px 12px;
+
+            &.sidebarmenuLeftAlignment {
+                padding: 6px 12px 6px 36px;
+            }
+
+            &.sidebarmenuStructure {
+                padding: 6px 12px 6px 60px;
+            }
+
+            .leftMenu {
+                display: flex;
+                align-items: center;
+            }
+
+            .rightMenu {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+
+                .counter {
+                    width: 28px;
+                    height: 20px;
+                    @include typo14-bold;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 9999px;
+
+                    &.pink {
+                        background-color: var(--theme-sidbar-counter-light-background-color);
+                        color: var(--theme-sidbar-counter-light-color);
+                    }
+
+                    &.dark {
+                        background-color: var(--theme-sidbar-counter-dark-background-color);
+                        color: var(--theme-sidbar-counter-dark-color);
+                        width: 36px;
+                    }
+                }
+
+                span {
+                    display: block;
+                    @include typo14-medium;
+                    color: var(--theme-sidbar-text-color);
+
+                    &.boldtext {
+                        @include typo12-bold;
+                        text-transform: uppercase;
+                        letter-spacing: 0.6px;
+                    }
+
+                    &.darkText {
+                        font-weight: 700;
+                        color: var(--theme-sidbar-text-primary-color);
+                    }
+
+                    &.blueText {
+                        font-weight: 700;
+                        color: var(--theme-sidbar-text-blue-color);
+                    }
+                }
+            }
+        }
+    }
+}

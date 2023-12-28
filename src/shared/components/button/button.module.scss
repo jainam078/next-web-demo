@@ -1,0 +1,56 @@
+@import "../../../styles/mixins/index.scss";
+
+.button {
+    button:disabled {
+        background-color: var(--theme-primary-button-disabled-background-color);
+    }
+
+    button {
+        border: 1px solid transparent;
+        padding: 8px 36px;
+        background-color: var(--theme-button-background-color);
+        color: var(--theme-button-text-color);
+        border-radius: 8px;
+        @include font-15-meduim;
+        line-height: 24px;
+        cursor: pointer;
+        transition: .3s ease-in-out;
+
+        &:hover {
+            // transform: translate(0 , -3px);
+            transition: .3s ease-in-out;
+        }
+
+        &.icontextAlignment {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .iconright {
+            order: 2;
+        }
+
+        &.smallbutton {
+            padding: 10px 16px;
+            font-size: 14px;
+            line-height: 20px;
+            box-shadow: none;
+
+
+            @include breakpoint("sm-max") {
+                padding: 8px 16px;
+            }
+        }
+
+        &.outline {
+            border: 1px solid var(--theme-primary-button-border-color);
+            background-color: transparent;
+            color: var(--theme-outline-button-text-color);
+
+            &:hover {
+                background: var(--theme-outline-button-hover-background-color);
+            }
+        }
+    }
+}

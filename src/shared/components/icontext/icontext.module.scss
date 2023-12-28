@@ -1,0 +1,15 @@
+@import '../../../styles/mixins/index.scss';
+
+.icontext {
+   display: flex;
+   align-items: center;
+   gap: 8px;
+   padding: 4px 8px;
+   cursor: pointer;
+   
+   span {
+    display: block;
+    @include typo14-medium;
+    color: var(--theme-gray-800);
+   }
+}

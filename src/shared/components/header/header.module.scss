@@ -1,0 +1,50 @@
+@import "../../../styles/mixins/index.scss";
+
+
+.header {
+  padding: 10px 16px;
+  border-bottom: 1px solid var(--theme-header-border-color);
+
+  .headerAlignment {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .rightAlignment {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+
+      .bellIcon {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+      }
+
+      .profileicon {
+        display: flex;
+        align-items: center;
+
+        img {
+          cursor: pointer;
+        }
+      }
+
+      .outlineButton {
+        button {
+          background-color: transparent;
+          padding: 6px 8px;
+          cursor: pointer;
+          border-radius: 8px;
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          box-shadow: var(--theme-boxshadow-md);
+          border: 1px solid var(--theme-header-outline-border-color);
+          @include typo14-bold;
+          color: var(--theme-header-outline-text-color);
+        }
+      }
+    }
+  }
+}

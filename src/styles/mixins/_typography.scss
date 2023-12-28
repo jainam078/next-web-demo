@@ -1,0 +1,273 @@
+@mixin font16-medium {
+  font-family: var(--primary-font);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+}
+
+
+@mixin font16 {
+  font-family: var(--primary-font);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+@mixin font22 {
+  font-family: var(--primary-font);
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+@mixin font10-medium {
+  font-family: var(--primary-font);
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 12px;
+}
+
+@mixin font18-bold {
+  font-family: var(--primary-font);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 27px;
+}
+
+@mixin font20 {
+  font-family: var(--primary-font);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+@mixin font24 {
+  font-family: var(--primary-font);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+@mixin font12 {
+  font-family: var(--primary-font);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+@mixin font14-medium {
+  font-family: var(--primary-font);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+@mixin font28-bold {
+  font-family: var(--primary-font);
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+}
+
+@mixin heading16 {
+  font-family: var(--theme-secondary-font);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+}
+
+@mixin heading12 {
+  font-family: var(--theme-secondary-font);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+@mixin heading14-medium {
+  font-family: var(--theme-secondary-font);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+@mixin heading32 {
+  font-family: var(--theme-secondary-font);
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 48px;
+}
+
+@mixin heading20 {
+  font-family: var(--theme-secondary-font);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 30px;
+}
+
+
+@mixin font-16 {
+  font-family: var(--primary-font);
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 22px;
+
+}
+
+@mixin font-18-bold {
+  font-family: var(--primary-font);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
+}
+
+@mixin font-18-meduim {
+  font-family: var(--primary-font);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+
+}
+
+@mixin font-18-meduim-second {
+  font-family: var(--theme-secondary-font);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+
+}
+
+@mixin font-18-bold-second {
+  font-family: var(--theme-secondary-font);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
+}
+
+
+@mixin font-12-meduim-second {
+  font-family: var(--theme-secondary-font);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+}
+
+@mixin font-12-bold-second {
+  font-family: var(--theme-secondary-font);
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 18px;
+}
+
+@mixin font-12-second {
+  font-family: var(--theme-secondary-font);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+@mixin font-24-meduim-second {
+  font-family: var(--theme-secondary-font);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+}
+
+@mixin font-15-meduim {
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+@mixin font-16-bold-second {
+  font-family: var(--theme-secondary-font);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+@mixin font-16-normal-second {
+  font-family: var(--theme-secondary-font);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+
+@mixin font-11-meduim-second {
+  font-family: var(--theme-secondary-font);
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 11px;
+}
+
+@mixin font-13-second {
+  font-family: var(--theme-secondary-font);
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+
+
+
+@mixin typo12-bold {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  font-family: var(--primary-font);
+  line-height: 140%;
+  letter-spacing: -0.1px;
+}
+
+
+@mixin typo12-medium {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  font-family: var(--primary-font);
+  line-height: 140%;
+  letter-spacing: -0.1px;
+}
+
+@mixin typo14-medium {
+  font-size: 14px;
+  font-style: normal;
+  font-family: var(--primary-font);
+  font-weight: 500;
+  line-height: 140%;
+  letter-spacing: -0.1px;
+}
+
+@mixin typo14-bold {
+  font-size: 14px;
+  font-style: normal;
+  font-family: var(--primary-font);
+  font-weight: 700;
+  line-height: 140%;
+  letter-spacing: -0.1px;
+}
+
+@mixin typo22-bold {
+  font-family: var(--primary-font);
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%; /* 28.6px */
+  letter-spacing: -0.6px;
+}

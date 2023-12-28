@@ -1,0 +1,47 @@
+@import '../../../../styles/mixins/index.scss';
+
+.headersearch {
+    width: 404px;
+    position: relative;
+
+    input {
+        border: 1px solid var(--theme-header-input-border-color);
+        width: 100%;
+        border-radius: 8px;
+        background-color: var(--theme-header-background-color);
+        height: 28px;
+        padding: 0 65px 0 40px;
+        text-align: center;
+        @include typo14-medium;
+        color: var(--theme-header-input-text-color);
+        &:focus {
+            outline: none;
+        }
+    }
+
+    .twoImageAlignment {
+        position: absolute;
+        cursor: pointer;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 8px;
+        display: flex;
+        gap: 6px;
+        align-items: center;
+    }
+
+    .searchicon {
+        position: absolute;
+        cursor: pointer;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 8px;
+        display: flex;
+        align-items: center;
+    }
+
+    ::placeholder {
+        color: var(--theme-header-input-placeholder-color);
+        @include typo14-medium;
+    }
+}

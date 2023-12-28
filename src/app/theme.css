@@ -1,0 +1,40 @@
+:root {
+    --primary-font: 'Inter', sans-serif;
+    --theme-page-background-color:#F4F5F5;
+    --theme-header-border-color:#E5E6E8;
+    --theme-header-link-text-color:#8912FE;
+
+    --theme-header-input-border-color:#E5E6E8;
+    --theme-header-input-placeholder-color:#B3B4CE;
+    --theme-header-input-text-color:#212129;
+    --theme-header-background-color:#FFF;
+    --theme-header-outline-border-color:#E5E6E8;
+    --theme-header-outline-text-color:#8912FE;
+
+    --theme-boxshadow-md:0px -1px 4px 0px rgba(0, 0, 0, 0.05) inset;
+
+
+    --theme-sidebar-border-color:#E5E6E8;
+    --theme-sidebar-background-color:#fff;
+
+    --theme-title-text-color:#212129;
+
+    --theme-gray-800:#8C8EA5;
+
+    --theme-fill-button-background-color:#8C51ED;
+    --theme-fill-button-border-color:#744EB4;
+    --theme-fill-button-text-color:#fff;
+
+    --theme-tab-border-color:#E5E6E8;
+    --theme-tab-text-color:#212129;
+    --theme-tab-primary-color:#8C51ED;
+
+    --theme-sidbar-border-color:#E5E6E8;
+    --theme-sidbar-text-color:#212129;
+    --theme-sidbar-text-primary-color:#DF5FFE;
+    --theme-sidbar-text-blue-color:#50A3D2;
+    --theme-sidbar-counter-light-color:#8C51ED;
+    --theme-sidbar-counter-dark-color:#8C8EA5;
+    --theme-sidbar-counter-light-background-color:#E8DCFB;
+    --theme-sidbar-counter-dark-background-color:#ECECF5;
+}

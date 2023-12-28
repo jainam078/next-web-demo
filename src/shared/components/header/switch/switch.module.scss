@@ -1,0 +1,79 @@
+@import '../../../../styles/mixins/index.scss';
+
+.switchDesign {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    p {
+        @include typo12-medium;
+        color: var(--theme-gray-800);
+        margin: 0;
+    }
+
+    .switchDesignStyle {
+        
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 32px;
+            height: 20px;
+        }
+
+        .switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border-radius: 999px;
+            border: 1px solid var(--Border-border-primary, #E5E6E8);
+            background: var(--Border-border-primary, #E5E6E8);
+            box-shadow: 0px 2px 2px 0px rgba(24, 34, 70, 0.05), 0px -1px 4px 0px rgba(0, 0, 0, 0.05) inset, 0px 0px 0px 2px #FFF inset;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 12px;
+            width: 12px;
+            left: 4px;
+            bottom: 3px;
+            background-color: white;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+
+        input:checked+.slider {
+            border-radius: 999px;
+            border: 1px solid #744EB4;
+            background: var(--Primary-accent, #8C51ED);
+            box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.20) inset, 0px -4px 4px 0px rgba(0, 0, 0, 0.10) inset;
+        }
+
+
+        input:checked+.slider:before {
+            -webkit-transform: translateX(11px);
+            -ms-transform: translateX(11px);
+            transform: translateX(11px);
+        }
+
+        /* Rounded sliders */
+        .slider.round {
+            border-radius: 34px;
+        }
+
+        .slider.round:before {
+            border-radius: 50%;
+        }
+    }
+}
